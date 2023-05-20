@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+    :root{
+        --both: #6B7280;
+    }
+} */
+@layer components{
+    .pp{
+        @apply sm:text-xl text-base 
+    }
+    .hh{
+        @apply sm:text-2xl text-xl mb-3
+    }
+}
