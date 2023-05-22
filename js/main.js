@@ -242,7 +242,7 @@ right4.addEventListener("click", function () {
   if (activeImage4 == 10) {
     activeImage4 = 0;
   }
-  pic1_4.style.marginLeft = `${-width34 * activeImage4}px`;
+  pic1_4.style.marginLeft = `${-widt64 * activeImage4}px`;
 });
 
 first4.addEventListener("click", function () {
@@ -306,4 +306,242 @@ play4.addEventListener("click", function () {
   pause4.classList.toggle("hidden");
   play4.classList.toggle("hidden");
   activeImage4--;
+});
+// carousel 5
+const pic1_5 = document.querySelector(".pic1_5");
+const left5 = document.querySelector(".left5");
+const right5 = document.querySelector(".right5");
+const first5 = document.querySelector(".first5");
+const second5 = document.querySelector(".second5");
+const third5 = document.querySelector(".third5");
+const forth5 = document.querySelector(".forth5");
+const fifth5 = document.querySelector(".fifth5");
+const pause5 = document.querySelector(".pause5");
+const play5 = document.querySelector(".play5");
+const width5 = document.documentElement.clientWidth - 71;
+let activeImage5 = 0;
+
+left5.addEventListener("click", function () {
+  activeImage5--;
+  if (activeImage5 == -1) {
+    activeImage5 = 4;
+  }
+  pic1_5.style.marginLeft = `${-width5 * activeImage5}px`;
+});
+right5.addEventListener("click", function () {
+  activeImage5++;
+  if (activeImage5 == 5) {
+    activeImage5 = 0;
+  }
+  pic1_5.style.marginLeft = `${-width5 * activeImage5}px`;
+});
+
+first5.addEventListener("click", function () {
+  activeImage5 = 0;
+  pic1_5.style.marginLeft = `${-width5 * activeImage5}px`;
+});
+second5.addEventListener("click", function () {
+  activeImage5 = 1;
+  pic1_5.style.marginLeft = `${-width5 * activeImage5}px`;
+});
+third5.addEventListener("click", function () {
+  activeImage5 = 2;
+  pic1_5.style.marginLeft = `${-width5 * activeImage5}px`;
+});
+forth5.addEventListener("click", function () {
+  activeImage5 = 3;
+  pic1_5.style.marginLeft = `${-width5 * activeImage5}px`;
+});
+fifth5.addEventListener("click", function () {
+  activeImage5 = 4;
+  pic1_5.style.marginLeft = `${-width5 * activeImage5}px`;
+});
+
+let nima5;
+function auto5() {
+  pic1_5.style.marginLeft = `${-width5 * activeImage5}px`;
+  activeImage5++;
+  if (activeImage5 == 5) {
+    activeImage5 = 0;
+  }
+}
+nima5 = setInterval(auto5, 3000);
+pause5.addEventListener("click", function () {
+  clearInterval(nima5);
+  pause5.classList.toggle("hidden");
+  play5.classList.toggle("hidden");
+  activeImage5--;
+});
+play5.addEventListener("click", function () {
+  nima5 = setInterval(auto5, 3000);
+  pause5.classList.toggle("hidden");
+  play5.classList.toggle("hidden");
+  activeImage5--;
+});
+// carousel 6
+const pic1_6 = document.querySelector(".pic1_6");
+const left6 = document.querySelector(".left6");
+const right6 = document.querySelector(".right6");
+const first6 = document.querySelector(".first6");
+const second6 = document.querySelector(".second6");
+const third6 = document.querySelector(".third6");
+const forth6 = document.querySelector(".forth6");
+const fifth6 = document.querySelector(".fifth6");
+const sixth6 = document.querySelector(".sixth6");
+const seventh6 = document.querySelector(".seventh6");
+const eighth6 = document.querySelector(".eighth6");
+const nineth6 = document.querySelector(".nineth6");
+const tenth6 = document.querySelector(".tenth6");
+const pause6 = document.querySelector(".pause6");
+const play6 = document.querySelector(".play6");
+const width6 = document.documentElement.clientWidth - 71;
+let activeImage6 = 0;
+
+left6.addEventListener("click", function () {
+  activeImage6--;
+  if (activeImage6 == -1) {
+    activeImage6 = 9;
+  }
+  pic1_6.style.marginLeft = `${-width6 * activeImage6}px`;
+});
+right6.addEventListener("click", function () {
+  activeImage6++;
+  if (activeImage6 == 10) {
+    activeImage6 = 0;
+  }
+  pic1_6.style.marginLeft = `${-width6 * activeImage6}px`;
+});
+
+first6.addEventListener("click", function () {
+  activeImage6 = 0;
+  pic1_6.style.marginLeft = `${-width6 * activeImage6}px`;
+});
+second6.addEventListener("click", function () {
+  activeImage6 = 1;
+  pic1_6.style.marginLeft = `${-width6 * activeImage6}px`;
+});
+third6.addEventListener("click", function () {
+  activeImage6 = 2;
+  pic1_6.style.marginLeft = `${-width6 * activeImage6}px`;
+});
+forth6.addEventListener("click", function () {
+  activeImage6 = 3;
+  pic1_6.style.marginLeft = `${-width6 * activeImage6}px`;
+});
+fifth6.addEventListener("click", function () {
+  activeImage6 = 4;
+  pic1_6.style.marginLeft = `${-width6 * activeImage6}px`;
+});
+sixth6.addEventListener("click", function () {
+  activeImage6 = 5;
+  pic1_6.style.marginLeft = `${-width6 * activeImage6}px`;
+});
+seventh4.addEventListener("click", function () {
+  activeImage6 = 6;
+  pic1_6.style.marginLeft = `${-width6 * activeImage6}px`;
+});
+eighth6.addEventListener("click", function () {
+  activeImage6 = 7;
+  pic1_6.style.marginLeft = `${-width6 * activeImage6}px`;
+});
+nineth6.addEventListener("click", function () {
+  activeImage6 = 8;
+  pic1_6.style.marginLeft = `${-width6 * activeImage6}px`;
+});
+tenth6.addEventListener("click", function () {
+  activeImage6 = 9;
+  pic1_6.style.marginLeft = `${-width6 * activeImage6}px`;
+});
+
+let nima6;
+function auto6() {
+  pic1_6.style.marginLeft = `${-width6 * activeImage6}px`;
+  activeImage6++;
+  if (activeImage6 == 10) {
+    activeImage6 = 0;
+  }
+}
+nima6 = setInterval(auto6, 3000);
+pause6.addEventListener("click", function () {
+  clearInterval(nima6);
+  pause6.classList.toggle("hidden");
+  play6.classList.toggle("hidden");
+  activeImage6--;
+});
+play6.addEventListener("click", function () {
+  nima6 = setInterval(auto6, 3000);
+  pause6.classList.toggle("hidden");
+  play6.classList.toggle("hidden");
+  activeImage6--;
+});
+// carousel 8
+const pic1_8 = document.querySelector(".pic1_8");
+const left8 = document.querySelector(".left8");
+const right8 = document.querySelector(".right8");
+const first8 = document.querySelector(".first8");
+const second8 = document.querySelector(".second8");
+const third8 = document.querySelector(".third8");
+const forth8 = document.querySelector(".forth8");
+const fifth8 = document.querySelector(".fifth8");
+const pause8 = document.querySelector(".pause8");
+const play8 = document.querySelector(".play8");
+const width8 = document.documentElement.clientWidth - 71;
+let activeImage8 = 0;
+
+left8.addEventListener("click", function () {
+  activeImage8--;
+  if (activeImage8 == -1) {
+    activeImage8 = 4;
+  }
+  pic1_8.style.marginLeft = `${-width8 * activeImage8}px`;
+});
+right8.addEventListener("click", function () {
+  activeImage8++;
+  if (activeImage8 == 5) {
+    activeImage8 = 0;
+  }
+  pic1_8.style.marginLeft = `${-width8 * activeImage8}px`;
+});
+
+first8.addEventListener("click", function () {
+  activeImage8 = 0;
+  pic1_8.style.marginLeft = `${-width8 * activeImage8}px`;
+});
+second8.addEventListener("click", function () {
+  activeImage8 = 1;
+  pic1_8.style.marginLeft = `${-width8 * activeImage8}px`;
+});
+third8.addEventListener("click", function () {
+  activeImage8 = 2;
+  pic1_8.style.marginLeft = `${-width8 * activeImage8}px`;
+});
+forth8.addEventListener("click", function () {
+  activeImage8 = 3;
+  pic1_8.style.marginLeft = `${-width8 * activeImage8}px`;
+});
+fifth8.addEventListener("click", function () {
+  activeImage8 = 4;
+  pic1_8.style.marginLeft = `${-width8 * activeImage8}px`;
+});
+
+let nima8;
+function auto8() {
+  pic1_8.style.marginLeft = `${-width8 * activeImage8}px`;
+  activeImage8++;
+  if (activeImage8 == 5) {
+    activeImage8 = 0;
+  }
+}
+nima8 = setInterval(auto8, 3000);
+pause8.addEventListener("click", function () {
+  clearInterval(nima8);
+  pause8.classList.toggle("hidden");
+  play8.classList.toggle("hidden");
+  activeImage8--;
+});
+play8.addEventListener("click", function () {
+  nima8 = setInterval(auto8, 3000);
+  pause8.classList.toggle("hidden");
+  play8.classList.toggle("hidden");
+  activeImage8--;
 });
